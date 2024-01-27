@@ -1,7 +1,9 @@
 import React from 'react'
-
+import Hero from './Hero'
 export const Nav = () => {
     return (
-        <div>Nav</div>
+        <div>
+            <Hero />
+        </div>
     )
 }

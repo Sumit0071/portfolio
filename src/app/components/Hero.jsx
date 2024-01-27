@@ -1,7 +1,11 @@
-import React from 'react'
-import Image from 'next/image'
-const PfpImg = "/assets/hero.jpg"
+"use client"
+
+import React from 'react';
+import Image from 'next/image';
+
 const Hero = () => {
+    const PfpImg = "/assets/hero.jpg";
+
     return (
         <section>
 
@@ -14,9 +18,9 @@ const Hero = () => {
 
                     </p>
                     <div>
-                        <button className='px-4 py-3 rounded-full mr-4 bg-white hover:bg-slate-200 text-black'>Hire me</button>
-                        <button className='px-4 py-3 rounded-full mr-4 bg-transparent  
-                        border border-white hover:border-fuchsia-900 mt-4 text-white'>Download CV</button>
+                        <button className='px-4 py-3 rounded-full mr-4 bg-white hover:bg-slate-200
+                         text-black'>Hire me</button>
+                        <DownloadButton />
                     </div>
                 </div>
                 <div className='col-span-5 place-self-center mt-4 lg:mt-0  overflow-hidden'>
@@ -29,6 +33,14 @@ const Hero = () => {
             </div>
         </section>
     )
-}
-
+};
+const DownloadButton = () => {
+    const handleDownload = () => {
+        window.open( "/assets/resume.pdf", '_blank' );
+    };
+    return (
+        <button className='btn-primary px-4 py-3 border border-white hover:border-fuchsia-900 
+        text-white rounded-full mr-4 'onClick={handleDownload} >Download CV</button>
+    );
+};
 export default Hero
