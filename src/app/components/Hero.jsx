@@ -1,25 +1,51 @@
-"use client"
+"use client";
 
 import React from 'react';
 import Image from 'next/image';
+import { TypeAnimation } from 'react-type-animation';
+import { motion } from 'framer-motion';
+
+const MontserratFont = "'Montserrat', sans-serif"; // Assign font to a constant
 
 const Hero = () => {
-    const PfpImg = "/assets/hero.jpg";
+    const PfpImg = "/assets/Avatar.jpg";
 
     return (
-        <section>
+        <section className='lg:py-16'>
 
-            <div className="grid grid-cols-1 lg:grid-cols-12">
-                <div className='col-span-7 place-self-center'>
+            <div className="grid grid-cols-1 sm:grid-cols-12">
+
+                <div className='col-span-7 place-self-center text-center 
+                sm:text-left'>
                     <h1 className='text-white mb-4 text-4xl lg:text-6xl font-extrabold'>
-                        Hello,I'm Sumit</h1>
-                    <p className='text-[#ADB7BE] text-lg mb-6 lg:text-xl'>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. quasi,
+                        <div className='text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 py-2'>
+                            Hello,I'm {''}</div>
 
-                    </p>
+                        <span>
+                            <TypeAnimation
+                                sequence={[
+                                    // Same substring at the start will only be typed out once, initially
+                                    'Sumit!',
+                                    1000, // wait 1s before replacing "Mice" with "Hamsters"
+                                    'Web Developer',
+                                    1000,
+                                    'ML enthusiast',
+                                    1000,
+                                    'I like to learn new stuffs!!',
+                                    1000
+                                ]}
+                                wrapper="span"
+                                speed={50}
+                                style={{ fontSize: '1em', display: 'inline-block' }}
+                                repeat={Infinity}
+                            />
+                        </span></h1>
+                    <p className='text-[#ADB7BE] sm:text-lg mb-6 lg:text-xl'>
+                        Let's make a better tommorow                    </p>
                     <div>
-                        <button className='px-4 py-3 rounded-full mr-4 bg-white hover:bg-slate-200
-                         text-black'>Hire me</button>
+                        <button className='px-5 py-4 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br
+                         from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-800
+                         text-white mb-4'>Hire me</button>
                         <DownloadButton />
                     </div>
                 </div>
@@ -39,8 +65,11 @@ const DownloadButton = () => {
         window.open( "/assets/resume.pdf", '_blank' );
     };
     return (
-        <button className='btn-primary px-4 py-3 border border-white hover:border-fuchsia-900 
-        text-white rounded-full mr-4 'onClick={handleDownload} >Download CV</button>
+        <button className='btn-primary px-1 py-1 border 
+       w-full sm:w-fit text-white rounded-full mr-4
+       hover:bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500  'onClick={handleDownload} >
+            <span className='block bg-[#121212] hover:bg-slate-800 rounded-full 
+            px-5 py-4'>Download CV</span></button>
     );
 };
-export default Hero
+export default Hero;
