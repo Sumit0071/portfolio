@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from 'react';
 import { playSong, pauseSong, nextSong, prevSong, searchSongs } from '../../../api/send/musicPlayer';
-
+import Image from 'next/image';
 const MusicCard = ( { albumCover, name, artist } ) => {
     const [isPlaying, setIsPlaying] = useState( false );
 
