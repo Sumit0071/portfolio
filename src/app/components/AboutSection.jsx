@@ -24,7 +24,7 @@ const TAB_DATA = [
         content: (
             <ul className="list-disc pl-2">
                 <li>Self learning coding</li>
-                <li>B.tech in CSE'26 Netaji Subhas Engineering College</li>
+                <li>B.tech in CSE 26 Netaji Subhas Engineering College</li>
             </ul>
         ),
     },
@@ -53,7 +53,7 @@ const AboutSection = () => {
     return (
         <section className="text-white" id="about">
             <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-                <Image src="/assets/setup.jpeg" width={500} height={500} className="rounded border border-white-50" />
+                <Image src="/assets/setup.jpeg" alt='setup' width={500} height={500} className="rounded border border-white-50" />
                 <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
                     <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
                     <p className="text-base lg:text-lg">
@@ -63,7 +63,7 @@ const AboutSection = () => {
                         Sequelize, HTML, CSS, and Git. I am a quick learner and I am always
                         looking to expand my knowledge and skill set. I am a team player and
                         I am excited to work with others to create amazing applications.
-                        Well I'm a singer too (not professional) but it's my passion.
+                        Well I am a singer too (not professional) but it's my passion.
                     </p>
                     <div className="flex flex-row justify-start mt-8">
                         <TabButton

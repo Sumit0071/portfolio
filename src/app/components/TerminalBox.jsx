@@ -131,14 +131,14 @@ const TerminalBox = () => {
          from-purple-400 to-pink-600 px-2 py-2'>Wanna Play with CLI??</h2>
 
         <div onClick={toggleTerminal} className='cursor-pointer'>
-          <Image src='/assets/Terminal_Logo.png' height={30} width={30} />
+          <Image src='/assets/Terminal_Logo.png' alt='logo' height={30} width={30} />
         </div>
       </div>
       {showTerminal && (
         <div className='container bg-[#272822] w-96 rounded border border-white p-2 absolute top-0 right-0'>
           <div className='flex items-center mb-2'>
             <div className='mr-2'>
-              <Image src='/assets/Terminal_Logo.png' height={30} width={30} />
+              <Image src='/assets/Terminal_Logo.png' alt='terminal_logo' height={30} width={30} />
             </div>
             <div>
               <p className='text-white'>Hi Folks! Know about me</p>
