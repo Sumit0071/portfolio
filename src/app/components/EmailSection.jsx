@@ -6,6 +6,7 @@ import { FaLinkedin } from "react-icons/fa";
 import Link from "next/link";
 import Image from "next/image";
 import { FaInstagram } from "react-icons/fa";
+import { FaSpotify } from "react-icons/fa";
 // import { initializeApp } from "firebase/app";
 // import { getFirestore, collection, addDoc } from "firebase/firestore";
 // const firebaseConfig = {
@@ -86,6 +87,9 @@ const EmailSection = () => {
                         <FaLinkedin className="bg-white h-7 w-7" />                    </Link>
                     <Link href="https://www.instagram.com/sonic_blizard/">
                         <FaInstagram className="bg-white h-7 w-7" />
+                    </Link>
+                    <Link href="https://open.spotify.com/user/31t3otkkh4cqli2elwerl5fm5fby">
+                        <FaSpotify className="bg-white h-7 w-7" />
                     </Link>
                 </div>
 
