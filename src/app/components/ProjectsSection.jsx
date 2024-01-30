@@ -110,14 +110,21 @@ const ProjectsSection = () => {
                         animate={isInView ? "animate" : "initial"}
                         transition={{ duration: 0.3, delay: index * 0.4 }}
                     >
-                        <ProjectCard
-                            key={project.id}
-                            title={project.title}
-                            description={project.description}
-                            imgUrl={project.image}
-                            gitUrl={project.gitUrl}
-                            previewUrl={project.previewUrl}
-                        />
+                        <div>
+                            <ProjectCard
+                                key={project.id}
+                                title={project.title}
+                                description={project.description}
+                                imgUrl={project.image}
+                                gitUrl={project.gitUrl === "/" ? null : project.gitUrl}
+                                previewUrl={project.previewUrl === "/" ? null : project.previewUrl}
+                            />
+                            {( project.gitUrl === "/" || project.previewUrl === "/" ) && (
+                                <p className="text-red-500 text-sm">
+                                    Oopsie! {project.gitUrl === "/" ? "GitHub repo" : "Live link"} not available.
+                                </p>
+                            )}
+                        </div>
                     </motion.li>
                 ) )}
             </ul>

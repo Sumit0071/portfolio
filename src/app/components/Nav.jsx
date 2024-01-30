@@ -13,7 +13,8 @@ const navLinks = [
     { title: "Contact me", path: "#contact" },
     {
         title: <SiYoutubemusic className='h-7 w-7' />, path: "#music"
-    }
+    },
+
 ];
 const Nav = () => {
     const [navbarOpen, setNavbarOpen] = useState( false );
@@ -46,7 +47,9 @@ const Nav = () => {
                             <li key={index}>
                                 <NavLink href={link.path} title={link.title} />
                             </li> )
+
                     }
+
                     </ul>
 
                 </div>

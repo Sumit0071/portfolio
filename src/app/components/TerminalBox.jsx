@@ -49,6 +49,15 @@ const TerminalBox = () => {
         </ul>
       ),
     },
+    {
+      title: "Experince",
+      id: "experience",
+      content: (
+        <ul className="list-disc pl-2">
+          <li>Member of Technical Staff at CS FOR ALL form August 2023 to present</li>
+        </ul>
+      ),
+    },
   ];
 
 

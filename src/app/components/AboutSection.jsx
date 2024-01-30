@@ -38,6 +38,15 @@ const TAB_DATA = [
             </ul>
         ),
     },
+    {
+        title: "Experince",
+        id: "Experience",
+        content: (
+            <ul className="list-disc pl-2">
+                <li>Member of Technical Staff at CS FOR ALL form August 2023 to present</li>
+            </ul>
+        ),
+    },
 ];
 
 const AboutSection = () => {
@@ -86,6 +95,13 @@ const AboutSection = () => {
                         >
                             {" "}
                             Certifications{" "}
+                        </TabButton>
+                        <TabButton
+                            selectTab={() => handleTabChange( "Experience" )}
+                            active={tab === "Experience"}
+                        >
+                            {" "}
+                            Experience{" "}
                         </TabButton>
                     </div>
                     <div className="mt-8">
