@@ -21,7 +21,7 @@ const Hero = () => {
                 sm:text-left justify-self-start '>
                     <h1 className='text-white mb-4 text-4xl lg:text-7xl lg:leading-normal font-extrabold'>
                         <div className='text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 py-2'>
-                            <p>Hello,I'm</p> {''}</div>
+                            <p>Hello,I am</p> {''}</div>
 
                         <span>
                             <TypeAnimation

@@ -33,7 +33,7 @@ const MusicCard = ( { albumCover, name, artist } ) => {
 
     return (
         <div className="music-card">
-            <img src={albumCover} alt="Album Cover" className="album-cover" />
+            <Image src={albumCover} alt="Album Cover" className="album-cover" />
             <div className="song-info">
                 <h2>{name}</h2>
                 <p>{artist}</p>

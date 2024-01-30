@@ -63,7 +63,7 @@ const AboutSection = () => {
                         Sequelize, HTML, CSS, and Git. I am a quick learner and I am always
                         looking to expand my knowledge and skill set. I am a team player and
                         I am excited to work with others to create amazing applications.
-                        Well I am a singer too (not professional) but it's my passion.
+                        Well I am a singer too (not professional) but it is my passion.
                     </p>
                     <div className="flex flex-row justify-start mt-8">
                         <TabButton
