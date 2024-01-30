@@ -61,16 +61,19 @@ const TerminalBox = () => {
       setCurrentDirectory( parentDirectory + '>' );
       setSelectedTabContent( null );
     }
-    else if ( command === 'show commands' ) {
+    else if ( command === 'ls' ) {
       // Display available commands directly in the terminal
       setSelectedTabContent(
         <>
           <p className="text-white">Available commands:</p>
           <ul className="text-[#53749c]">
+            <li>home:Navigate to home section</li>
             <li>about: Navigate to about section</li>
             <li>projects: Navigate to projects section</li>
             <li>contact: Navigate to contact section</li>
             <li>cd..: Move up one directory</li>
+            <li>ls: Showing available commands</li>
+            <li>cat .. to see  file contents.</li>
           </ul>
         </>
       );
@@ -87,6 +90,9 @@ const TerminalBox = () => {
     } else {
       const errorMessage = 'Command not recognized';
       switch ( command ) {
+        case 'home':
+          setCurrentDirectory( 'C:\\Users\\SUMIT ADHIKARI\\' );
+          window.location.href = '/';
         case 'about':
           setCurrentDirectory( 'C:\\Users\\SUMIT ADHIKARI\\about>' );
           window.location.href = '#about'; // Redirect to about page
@@ -103,6 +109,11 @@ const TerminalBox = () => {
           // Handle show commands logic here
           console.log( 'Available commands: about, projects, contact' );
           break;
+        case 'music':
+          setCurrentDirectory( 'C:\\Users\\SUMIT ADHIKARI\\music>' );
+          window.location.href = '#music'; // Redirect to contact page
+          break;
+
         default:
           setSelectedTabContent( <p className="text-red-500">{errorMessage}</p> );
           break;
@@ -136,7 +147,7 @@ const TerminalBox = () => {
           </div>
           <input
             type="text"
-            placeholder="Enter command..."
+            placeholder="Enter ls to see commands..."
             value={inputValue}
             onChange={( e ) => setInputValue( e.target.value )}
             onKeyDown={( e ) => {
