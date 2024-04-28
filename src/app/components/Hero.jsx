@@ -33,7 +33,7 @@ const Hero = () => {
                                     1000,
                                     'ML enthusiast',
                                     1000,
-                                    'Singer',
+                                    'Flutter Developer',
                                     1000,
                                     'I like to learn new stuffs!!',
                                     1000
