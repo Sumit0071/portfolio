@@ -12,7 +12,7 @@ const TAB_DATA = [
                 <li>Node.js</li>
                 <li>Express</li>
                 <li>PostgreSQL</li>
-                <li>Sequelize</li>
+                <li>MongoDB</li>
                 <li>JavaScript</li>
                 <li>React</li>
             </ul>
@@ -34,7 +34,7 @@ const TAB_DATA = [
         content: (
             <ul className="list-disc pl-2">
                 <li>Google Cloud career Practitioner</li>
-                <li>Google Professional Cloud Developer</li>
+                
             </ul>
         ),
     },
