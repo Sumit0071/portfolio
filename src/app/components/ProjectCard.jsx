@@ -41,7 +41,7 @@ const ProjectCard = ( { imgUrl, title, description, gitUrl, previewUrl } ) => {
                 <h5 className="text-xl font-semibold mb-2">{title}</h5>
                 <p className="text-[#ADB7BE]">{description}</p>
                 {showMessage && ( gitUrl === "/" || previewUrl === "/" ) && (
-                    <p className="text-red-500 text-sm">Oopsie! {gitUrl === "/" ? "GitHub repo" : "Live link"} not available at this moment.</p>
+                    <p className="text-red-500 text-sm">Oopsie! {gitUrl === "/" ? "GitHub repo" : "Live link"} not available at this moment checkout the github repo.</p>
                 )}
             </div>
         </div>
