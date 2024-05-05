@@ -38,7 +38,7 @@ const projectsData = [
         description: "Made this project initially for SIH23 that landed us in grand finals",
         image: "/assets/mindcarelogin.jpg",
         tag: ["All", "Mobile"],
-        gitUrl: "/",
+        gitUrl: "https://github.com/Sumit0071/MindCare-Pro/tree/main",
         previewUrl: "/",
     },
     {
