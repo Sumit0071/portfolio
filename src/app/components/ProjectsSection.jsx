@@ -43,8 +43,8 @@ const projectsData = [
     },
     {
         id: 5,
-        title: "Coming Soon",
-        description: "coming Soon",
+        title: "LessMeet",
+        description: "web application analogous to Google Meet,build with NextJS,CSS,JavaScript",
         // image: "/images/projects/5.png",
         tag: ["All", "Web"],
         gitUrl: "/",
@@ -56,7 +56,7 @@ const projectsData = [
         description: "Coming Soon",
         // image: "/images/projects/6.png",
         tag: ["All", "Web"],
-        gitUrl: "/",
+        gitUrl: "https://github.com/Sumit0071/Lessmeet",
         previewUrl: "/",
     },
 ];
