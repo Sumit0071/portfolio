@@ -35,7 +35,7 @@ const projectsData = [
     {
         id: 4,
         title: "MindCare Pro",
-        description: "Made this project initially for SIH23 that landed us in grand finals",
+        description: "Made this project initially for SIH23 that landed us in grand finals using Flutter,OPENAI api",
         image: "/assets/mindcarelogin.jpg",
         tag: ["All", "Mobile"],
         gitUrl: "https://github.com/Sumit0071/MindCare-Pro/tree/main",
