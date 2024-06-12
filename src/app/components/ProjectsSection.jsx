@@ -45,7 +45,7 @@ const projectsData = [
         id: 5,
         title: "LessMeet",
         description: "web application analogous to Google Meet,build with NextJS,CSS,JavaScript",
-        // image: "/images/projects/5.png",
+         image: "/assets/lessmeet.png",
         tag: ["All", "Web"],
         gitUrl: "/",
         previewUrl: "/",
