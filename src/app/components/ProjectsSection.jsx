@@ -23,17 +23,17 @@ const projectsData = [
         gitUrl: "https://github.com/Sumit0071/Nike-Web-app",
         previewUrl: "https://nike-web-app.vercel.app/",
     },
+    // {
+    //     id: 3,
+    //     title: "Full stack E-commerce Application",
+    //     description: "Project 3 description",
+    //     // image: "/images/projects/3.png",
+    //     tag: ["All", "Web"],
+    //     gitUrl: "/",
+    //     previewUrl: "/",
+    // },
     {
         id: 3,
-        title: "Full stack E-commerce Application",
-        description: "Project 3 description",
-        // image: "/images/projects/3.png",
-        tag: ["All", "Web"],
-        gitUrl: "/",
-        previewUrl: "/",
-    },
-    {
-        id: 4,
         title: "MindCare Pro",
         description: "Made this project initially for SIH23 that landed us in grand finals using Flutter,OPENAI api",
         image: "/assets/mindcarelogin.jpg",
@@ -42,7 +42,7 @@ const projectsData = [
         previewUrl: "/",
     },
     {
-        id: 5,
+        id: 4,
         title: "LessMeet",
         description: "web application analogous to Google Meet,build with NextJS,CSS,JavaScript",
          image: "/assets/lessmeet.png",
@@ -50,15 +50,15 @@ const projectsData = [
         gitUrl: "https://github.com/Sumit0071/Lessmeet",
         previewUrl: "/",
     },
-    {
-        id: 6,
-        title: "Coming Soon",
-        description: "Coming Soon",
-        // image: "/images/projects/6.png",
-        tag: ["All", "Web"],
-        gitUrl: "https://github.com/Sumit0071/Lessmeet",
-        previewUrl: "/",
-    },
+    // {
+    //     id: 6,
+    //     title: "Coming Soon",
+    //     description: "Coming Soon",
+    //     // image: "/images/projects/6.png",
+    //     tag: ["All", "Web"],
+    //     gitUrl: "https://github.com/Sumit0071/Lessmeet",
+    //     previewUrl: "/",
+    // },
 ];
 
 const ProjectsSection = () => {
