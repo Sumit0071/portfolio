@@ -8,18 +8,7 @@ import Image from "next/image";
 import { FaInstagram } from "react-icons/fa";
 import { FaSpotify } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
-// import { initializeApp } from "firebase/app";
-// import { getFirestore, collection, addDoc } from "firebase/firestore";
-// const firebaseConfig = {
-//     apiKey: "AIzaSyBo1Eru7kYWnHl3-BZHJVsTwKM3b7SHKog",
-//     authDomain: "portfolio-97e64.firebaseapp.com",
-//     projectId: "portfolio-97e64",
-//     storageBucket: "portfolio-97e64.appspot.com",
-//     messagingSenderId: "949186348013",
-//     appId: "1:949186348013:web:3d6fe9899239822c541de4"
-// };
-// const firebaseApp = initializeApp( firebaseConfig );
-// const db = getFirestore( firebaseApp )
+
 const EmailSection = () => {
     const [emailSubmitted, setEmailSubmitted] = useState( false );
 
@@ -52,17 +41,7 @@ const EmailSection = () => {
             console.log( "Message sent." );
             setEmailSubmitted( true );
         }
-        // try {
-        //     // Store data in Firebase Firestore
-        //     const docRef = await addDoc( collection( db, "contacts" ), data );
-        //     console.log( "Document written with ID: ", docRef.id );
-
-        //     // Update state to indicate successful submission
-        //     setEmailSubmitted( true );
-        // } catch ( e ) {
-        //     console.error( "Error adding document: ", e );
-        // }
-    };
+     
 
     return (
         <section
