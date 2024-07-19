@@ -11,7 +11,7 @@ const TAB_DATA = [
             <ul className="list-disc pl-2">
                 <li>Node.js</li>
                 <li>Express</li>
-                <li>PostgreSQL</li>
+                <li>MySQL</li>
                 <li>MongoDB</li>
                 <li>JavaScript</li>
                 <li>React</li>
@@ -43,7 +43,7 @@ const TAB_DATA = [
         id: "Experience",
         content: (
             <ul className="list-disc pl-2">
-                <li>Member of Technical Staff at CS FOR ALL form August 2023 to present</li>
+                <li>Member of Technical Staff at CS FOR ALL form August 2023 to March 2023</li>
             </ul>
         ),
     },
@@ -68,7 +68,7 @@ const AboutSection = () => {
                     <p className="text-base lg:text-lg">
                         I am a full stack web developer with a passion for creating
                         interactive and responsive web applications. I have experience
-                        working with JavaScript, React, Redux, Node.js, Express, PostgreSQL,
+                        working with JavaScript, React, Redux, Node.js, Express, MySQL,
                          HTML, CSS, and Git. I am a quick learner and I am always
                         looking to expand my knowledge and skill set. I am a team player and
                         I am excited to work with others to create amazing applications.
