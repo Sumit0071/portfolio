@@ -69,7 +69,7 @@ const Hero = () => {
 };
 const DownloadButton = () => {
     const handleDownload = () => {
-        window.open( "/assets/Salesforce_resume.pdf", '_blank' );
+        window.open( "/assets/Ey_apply.pdf", '_blank' );
     };
     return (
         <button className='btn-primary px-1 py-1 border 
