@@ -29,9 +29,7 @@ const Hero = () => {
                                     // Same substring at the start will only be typed out once, initially
                                     'Sumit!',
                                     1000, // wait 1s before replacing "Mice" with "Hamsters"
-                                    'Web Developer',
-                                    1000,
-                                    'ML enthusiast',
+                                    'Full stack Web Developer',
                                     1000,
                                     'Flutter Developer',
                                     1000,
